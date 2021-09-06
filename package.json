@@ -1,0 +1,69 @@
+{
+  "name": "base_complet",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "lint": "eslint --ext js,jsx,ts,tsx --fix",
+    "prepare": "husky install",
+    "test": "jest",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/babel__core": "^7.1.14",
+    "@types/babel__generator": "^7.6.2",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.1",
+    "@types/react": "^17.0.9",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "babel-jest": "^27.0.2",
+    "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.4",
+    "jest-watch-typeahead": "^0.6.4",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "react-test-renderer": "^17.0.2",
+    "typescript": "^4.3.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint '*/**/*.{ts,tsx}' --fix --max-warnings=0",
+      "cross-env CI=true yarn test --bail --findRelatedTests"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
