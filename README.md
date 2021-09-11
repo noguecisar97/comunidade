@@ -1,6 +1,6 @@
-## BASE DE PROJETOS NEXTJS CONTENDO DIVERSOS RECURSOS PARA PROGRAMACAO ##
+## BASE DE PROJETOS NEXTJS CONTENDO DIVERSOS RECURSOS PARA PROGRAMACAO 
 
-<h4> Ao clonar executar no terminal o comando </h4>
+#### Ao clonar executar no terminal o comando
 
 <pre>
   <code>
