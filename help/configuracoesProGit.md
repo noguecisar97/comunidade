@@ -13,7 +13,7 @@
   </code>
 </pre>
 
-<p align="center" color="rgb(200,200,100)"> Agora cole as linhas que estão abaixo no arquivo,
+<p> Agora cole as linhas que estão abaixo no arquivo,
 alterando seu e-mail e nome de usuario </p>
 
 <pre>
@@ -41,7 +41,7 @@ alterando seu e-mail e nome de usuario </p>
   </code>
 </pre>
 
-<p>Recomendado ao fazer commit</p>
+##### Recomendado ao fazer commit
 
 <pre>
   <code>
