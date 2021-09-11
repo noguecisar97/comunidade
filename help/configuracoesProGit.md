@@ -1,14 +1,19 @@
 # Configure seu git para os commits mais rapidos e organizados ##
 
 ### No Terminal digite
-
-<code> git config --local core.editor code </code>
-
+<pre>
+  <code> 
+    git config --local core.editor code 
+  </code>
+</pre>
 <p> Logo após execute o seguinte comando </p>
+<pre>
+  <code> 
+      git config --local --edit
+  </code>
+</pre>
 
-<p> git config --local --edit </p>
-
-<p> Agora cole as linhas que estão abaixo no arquivo,
+<p align="center" color="rgb(200,200,100)"> Agora cole as linhas que estão abaixo no arquivo,
 alterando seu e-mail e nome de usuario </p>
 
 <pre>
