@@ -8,8 +8,8 @@ echo ''
 yarn lint-staged
 echo ''
 echo 'Inicio do test.'
-echo ''
-yarn test
+echo '#Sem testes no momento'
+# yarn test
 echo ''
 echo 'Fim do test.'
 echo 'Fim do pre-commit.'

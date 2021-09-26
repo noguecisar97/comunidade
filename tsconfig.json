@@ -18,11 +18,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src/",
+    "rootDir": ".",
+    "outDir": "./build",
     "typeRoots": [
       "node_modules/@types"
     ]
   },
   "include": [
+    "package.json",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
