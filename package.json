@@ -74,8 +74,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint '*/**/*.{ts,tsx}' --fix --max-warnings=0",
-      "cross-env CI=true yarn test --bail --findRelatedTests"
+      "eslint '*/**/*.{ts,tsx}' --fix --max-warnings=0"
     ]
   },
   "config": {
