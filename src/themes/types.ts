@@ -5,5 +5,6 @@ export interface themeProps {
     secondary: '#ffffff'
     third: '#17161F'
     fourth: '#08474B'
+    fifth: '#079B9B'
   }
 }

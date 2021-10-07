@@ -1,18 +1,19 @@
 import React from 'react'
-import { Container } from './styles'
+import Image from 'next/image'
+import { Button, Container, Contend, OptionMenu } from './styles'
 
 export const Header = (): JSX.Element => {
   return (
     <Container>
-      <div>
-        <p>Documentação</p>
-        <p>Duvidas e Bugs</p>
-        <p>Equipe</p>
-        <div>
-          <img src="" alt="" />
-          <button>Entrar</button>
-        </div>
-      </div>
+      <Contend>
+        <OptionMenu>Documentação</OptionMenu>
+        <OptionMenu>Duvidas e Bugs</OptionMenu>
+        <OptionMenu>Equipe</OptionMenu>
+        <Button>
+          <Image width={25} height={25} src="/svgs/user_ninja.svg" alt="" />
+          Entrar
+        </Button>
+      </Contend>
     </Container>
   )
 }
