@@ -3,8 +3,9 @@ import { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../themes/global'
-import theme from '../themes/theme'
+import { theme } from '../themes/theme'
 import Head from 'next/head'
+import { Header } from 'components/header'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
         <GlobalStyle />
       </ThemeProvider>
