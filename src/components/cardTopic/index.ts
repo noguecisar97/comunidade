@@ -1,0 +1,1 @@
+export { CardTopic } from './cardTopic'

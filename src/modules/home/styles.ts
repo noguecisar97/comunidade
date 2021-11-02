@@ -2,17 +2,27 @@ import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-x: hidden;
+`
+
+export const Banner = styled.div`
+  position: relative;
+  width: 100vw;
 `
 
 const FrameFontSize = keyframes`
   0% {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
   50% {
-    font-size: 6.2rem;
+    font-size: 5.2rem;
   }
   100% {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
   }
 `
 
@@ -43,6 +53,14 @@ export const Image = styled.img`
   width: 100%;
   height: calc(100vh - 80px);
   filter: grayscale(0.4) brightness(0.6);
+
+  @media screen and (max-width: 800px) {
+    height: calc(100vh - 280px);
+  }
+
+  @media screen and (max-width: 600px) {
+    height: calc(100vh - 380px);
+  }
 `
 
 export const About = styled.p`
@@ -63,4 +81,15 @@ export const About = styled.p`
   &:hover {
     font-size: 4.6rem;
   }
+`
+
+export const TopicsContainer = styled.div`
+  max-width: 1365px;
+
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 3rem;
+
+  padding: 6rem 1rem;
 `

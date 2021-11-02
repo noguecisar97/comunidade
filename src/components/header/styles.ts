@@ -20,7 +20,7 @@ export const Contend = styled.div`
 
 export const OptionMenu = styled.p`
   color: ${(props) => props.theme.colors.secondary};
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-style: italic;
 
   &:hover {
@@ -34,7 +34,7 @@ export const Button = styled.button`
   background-color: ${(props) => props.theme.colors.fifth};
   border: solid 1px ${(props) => props.theme.colors.secondary};
   border-radius: 50px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;

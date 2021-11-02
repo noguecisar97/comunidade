@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Lib de Components",
+    "description": "Utilizamos como base a lib do Material-ui, para criação de componentes diversos, podendo ser feita utilização em seus projetos",
+    "link": ""
+  },
+  {
+    "name": "Resolvendo bugs",
+    "description": "Com diversos novos programadores, os mesmo acabam sempre encontrando barreiras que as vezes não conseguem superar sozinho, estamos disposto a ajudar, basta nos enviar sua duvida.",
+    "link": ""
+  },
+  {
+    "name": "Construção de Software",
+    "description": "Trabalhamos com diversos desenvolvedores onde conseguimos desenvolver diversos softwares tanto para automação como para execução de serviços temporários.",
+    "link": ""
+  },
+  {
+    "name": "Projetos já criados",
+    "description": "Nossa equipe já atuou em diversos projetos tendo assim grande conhecimento para a ajuda e suporte, conheça alguns de nossos projetos",
+    "link": ""
+  },
+  {
+    "name": "Desenvolvimento Web",
+    "description": "Construção de website é uma das demandas mais pedidas atualmente, conseguimos construir diversos sites, se já conter um template fica até mais fácil, focados em qualidade e seguraça",
+    "link": ""
+  },
+  {
+    "name": "Principais Linguagens",
+    "description": "Atualmente existem diversas linguagens no mercado, temos um grupo grande atuando com diversas linguagens para atender as demandas, veja mais sobre nossas principais linguagens.",
+    "link": ""
+  }
+]
