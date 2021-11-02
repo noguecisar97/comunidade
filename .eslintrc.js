@@ -64,7 +64,7 @@ module.exports = {
         "comma-dangle": OFF,
         "eqeqeq": [WARNING, "allow-null"],
         "import/imports-first": OFF,
-        "indent": [WARNING, 2, {"SwitchCase": 1}],
+        "@typescript-eslint/indent": [WARNING, 2, {"SwitchCase": 1}],
         "max-len": [WARNING, 100, 2],
         "no-console": [WARNING, {"allow": ["warn", "error"]}],
         "no-debugger": WARNING,

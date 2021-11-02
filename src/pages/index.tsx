@@ -1,8 +1,14 @@
 import React from 'react'
 import { NextPage } from 'next'
+import { Home } from 'modules/home'
+import { Container } from './styles'
 
-export const Home: NextPage = (): JSX.Element => {
-  return <div>Conteudo</div>
+export const HomePage: NextPage = (): JSX.Element => {
+  return (
+    <Container>
+      <Home />
+    </Container>
+  )
 }
 
-export default Home
+export default HomePage
