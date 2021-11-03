@@ -93,3 +93,12 @@ export const TopicsContainer = styled.div`
 
   padding: 6rem 1rem;
 `
+
+export const Anchor = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.secondary};
+
+  &:active {
+    color: ${(props) => props.theme.colors.secondary};
+  }
+`

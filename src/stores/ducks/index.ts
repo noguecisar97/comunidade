@@ -1,3 +1,7 @@
 import { combineReducers } from 'redux'
 
-export default combineReducers({})
+import pagination from './Pagination'
+
+export default combineReducers({
+  pagination,
+})

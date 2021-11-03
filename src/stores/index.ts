@@ -1,6 +1,10 @@
 import allReducers from './ducks'
 import rootSaga from './sagas'
 
-export type ApplicationState = { none: true }
+import { State as PaginationState } from './ducks/Pagination/types'
+
+export type ApplicationState = {
+  pagination: PaginationState
+}
 
 export { allReducers, rootSaga }

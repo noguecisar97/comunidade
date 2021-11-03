@@ -5,5 +5,6 @@ export interface IProps {
   title: string
   description: string
   style?: React.CSSProperties
+  link: string
   id?: string
 }

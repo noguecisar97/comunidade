@@ -29,6 +29,7 @@ export const Contend = styled.div`
 export const Title = styled.h2`
   font-size: 1.5rem;
   color: ${(props) => props.theme.colors.fifth};
+  cursor: pointer;
 `
 
 export const Description = styled.p`
