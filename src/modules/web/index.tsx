@@ -15,7 +15,7 @@ export const WebPage = (): JSX.Element => {
         changePage('home')
       }}
     >
-      Voltar
+      voltar
     </button>
   )
 }
