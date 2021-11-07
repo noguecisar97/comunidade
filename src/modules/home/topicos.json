@@ -10,8 +10,8 @@
     "link": ""
   },
   {
-    "name": "Construção de Software",
-    "description": "Trabalhamos com diversos desenvolvedores onde conseguimos desenvolver diversos softwares tanto para automação como para execução de serviços temporários.",
+    "name": "Equipe",
+    "description": "Nossa equipe é composta por 6 desenvolvedores, venha conhecer e descobrir um pouco mais de cada um e suas informações.",
     "link": ""
   },
   {
@@ -27,6 +27,6 @@
   {
     "name": "Principais Linguagens",
     "description": "Atualmente existem diversas linguagens no mercado, temos um grupo grande atuando com diversas linguagens para atender as demandas, veja mais sobre nossas principais linguagens.",
-    "link": ""
+    "link": "linguagens"
   }
 ]

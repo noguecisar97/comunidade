@@ -52,6 +52,7 @@ export const Title = styled.h1`
 export const Image = styled.img`
   width: 100%;
   height: calc(100vh - 80px);
+  min-height: 26rem;
   filter: grayscale(0.4) brightness(0.6);
 
   @media screen and (max-width: 800px) {

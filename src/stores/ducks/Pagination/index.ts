@@ -12,6 +12,11 @@ export const INITIAL_STATE: State = {
       title: 'Web',
       page: 'web',
     },
+    {
+      isActive: false,
+      title: 'Linguagens',
+      page: 'linguagens',
+    },
   ],
 }
 
