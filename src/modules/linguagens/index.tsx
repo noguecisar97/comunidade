@@ -4,7 +4,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setNewPage } from 'stores/ducks/Pagination/action'
 
-export const WebPage = (): JSX.Element => {
+export const LinguagensPage = (): JSX.Element => {
   const dispatch = useDispatch()
 
   const changePage = (page: string): void => {

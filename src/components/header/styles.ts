@@ -28,8 +28,8 @@ export const OptionMenu = styled.p`
   }
 `
 export const Button = styled.button`
-  width: 130px;
-  height: 45px;
+  width: 13rem;
+  height: 4.5rem;
   color: ${(props) => props.theme.colors.secondary};
   background-color: ${(props) => props.theme.colors.fifth};
   border: solid 1px ${(props) => props.theme.colors.secondary};
