@@ -8,7 +8,7 @@ import { GrGraphQl } from 'react-icons/gr'
 import { SiJavascript } from 'react-icons/si'
 import { BsGearWideConnected } from 'react-icons/bs'
 
-export const LinguagensPageMenu = (): JSX.Element => {
+export const WebMenu = (): JSX.Element => {
   const dispatch = useDispatch()
   const [display, setDisplay] = useState('')
 

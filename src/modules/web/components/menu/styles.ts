@@ -6,7 +6,6 @@ export const ContainerPrincipal = styled.div<IProps>`
   width: 100%;
   margin: 0;
   padding: 10px 0 5px 0;
-  border-bottom: solid 1px #1b6e74;
 
   div {
     display: flex;
@@ -28,10 +27,10 @@ export const ContainerPrincipal = styled.div<IProps>`
         cursor: pointer;
         width: 30px;
         height: 30px;
-        color: #1b6e74;
+        color: ${(props) => props.theme.colors.primary};
 
         :hover {
-          color: white;
+          color: ${(props) => props.theme.colors.secondary};
           transform: scale(1.2);
         }
       }
@@ -49,25 +48,24 @@ export const ContainerPrincipal = styled.div<IProps>`
     width: 100%;
 
     li {
-      color: #1b6e74;
+      color: ${(props) => props.theme.colors.primary};
       font-size: 1.3rem;
 
       cursor: pointer;
 
       :hover {
-        color: white;
+        color: ${(props) => props.theme.colors.secondary};
       }
     }
   }
 
   @media (min-width: 800px) {
     padding: 25px 0 0 0;
-    border: solid 1px #1b6e74;
-    border-top: none;
-    border-bottom: none;
+    border-right: solid 1px ${(props) => props.theme.colors.primary};
     display: flex;
     flex-direction: column;
     max-width: 20rem;
+    height: calc(100vh - 80px);
 
     div {
       .btn {
@@ -86,11 +84,10 @@ export const ContainerPrincipal = styled.div<IProps>`
       border-bottom: none;
 
       li {
-        color: #1b6e74;
+        color: ${(props) => props.theme.colors.primary};
         font-size: 1.5rem;
         padding: 1.2rem;
         cursor: pointer;
-        border-bottom: solid 1px #1b6e74;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -99,12 +96,11 @@ export const ContainerPrincipal = styled.div<IProps>`
         width: 100%;
 
         :hover {
-          color: white;
+          color: ${(props) => props.theme.colors.secondary};
         }
 
         :first-child {
           margin-top: 3rem;
-          border-top: solid 1px #1b6e74;
         }
       }
     }
@@ -116,7 +112,7 @@ export const CustomButton = styled(ButtonCustom)`
   padding: 0;
   background: transparent;
   outline: 0;
-  color: #1b6e74;
+  color: ${(props) => props.theme.colors.primary};
 `
 
 export const CustomNav = styled.nav<IProps>`
