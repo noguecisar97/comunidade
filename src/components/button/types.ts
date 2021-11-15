@@ -2,7 +2,7 @@ import { ReactSVGElement, MouseEventHandler, CSSProperties } from 'react'
 
 export interface IProps {
   text?: string
-  onClick?: MouseEventHandler<HTMLButtonElement> | undefined
+  onClick?: MouseEventHandler<HTMLButtonElement>
   icon?: ReactSVGElement
   showIcon?: boolean
   color?: string
