@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardWebContainer = styled.div`
-  max-width: 32rem;
+  max-width: 28.2rem;
   min-width: 16rem;
   width: 100%;
   height: 16rem;
@@ -9,13 +9,12 @@ export const CardWebContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   border: solid 1px ${(props) => props.theme.colors.primary};
   border-radius: 1.5rem;
   cursor: pointer;
 
   h1 {
-    margin-top: 2rem;
     color: ${(props) => props.theme.colors.primary};
   }
 
@@ -24,5 +23,9 @@ export const CardWebContainer = styled.div`
     margin: 0 1rem;
     text-align: center;
     font-size: 1.1rem;
+  }
+
+  :hover {
+    transform: scale(1.1);
   }
 `

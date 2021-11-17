@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Variaveis",
+    "texto": "Variaveis são palavras reservadas da linguaguem para guardar algo na memoria, elas mudam dependendo do scoup."
+  },
+  {
+    "titulo": "Objeto",
+    "texto": "Object é um conjunto de chave e valor que representa algo."
+  },
+  {
+    "titulo": "Array",
+    "texto": "Array no JavaScript é um objeto usado para construir listas."
+  },
+  {
+    "titulo": "Function",
+    "texto": "Function é uma estrutura de contrução de função que precisa ser chamada pra ter sua execução."
+  },
+  {
+    "titulo": "If / Else",
+    "texto": "If / else é uma estrutura que trabalha com condiçoes de verdadeiro ou falso."
+  },
+  {
+    "titulo": "Switch",
+    "texto": "Switch é uma estrutura que trabalha com condiçoes de verdadeiro ou falso usando cases."
+  },
+  {
+    "titulo": "For",
+    "texto": "For é um estrutura de percorrer array."
+  },
+  {
+    "titulo": "ForEach",
+    "texto": "#"
+  },
+  {
+    "titulo": "Map",
+    "texto": "#"
+  },
+  {
+    "titulo": "Filter",
+    "texto": "#"
+  },
+  {
+    "titulo": "Reduce",
+    "texto": "#"
+  },
+  {
+    "titulo": "Find",
+    "texto": "#"
+  }
+]
