@@ -3,13 +3,12 @@ import { ButtonCustom } from 'components/button'
 import { IProps } from './types'
 
 export const ContainerPrincipal = styled.div<IProps>`
-  width: 100%;
   margin: 0;
   padding: 10px 0 5px 0;
+  border-bottom: solid 1px ${(props) => props.theme.colors.primary};
 
   div {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
 
@@ -62,10 +61,12 @@ export const ContainerPrincipal = styled.div<IProps>`
   @media (min-width: 800px) {
     padding: 25px 0 0 0;
     border-right: solid 1px ${(props) => props.theme.colors.primary};
+    border-bottom: none;
     display: flex;
     flex-direction: column;
-    max-width: 20rem;
-    height: calc(100vh - 80px);
+    max-width: 15rem;
+    min-width: 10rem;
+    width: 100%;
 
     div {
       .btn {
