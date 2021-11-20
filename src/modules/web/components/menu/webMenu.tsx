@@ -7,6 +7,7 @@ import { SiCss3, SiHtml5, SiNextdotjs, SiPython, SiReact, SiTypescript } from 'r
 import { GrGraphQl } from 'react-icons/gr'
 import { SiJavascript } from 'react-icons/si'
 import { BsGearWideConnected } from 'react-icons/bs'
+import { setWebPage } from 'stores/ducks/webPages/action'
 
 export const WebMenu = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -18,6 +19,10 @@ export const WebMenu = (): JSX.Element => {
 
   function abrirMenu(): void {
     setDisplay(display === 'flex' ? 'none' : 'flex')
+  }
+
+  const changeWebPage = (page: string): void => {
+    if (page !== '') dispatch(setWebPage({ page }))
   }
 
   return (
@@ -38,14 +43,14 @@ export const WebMenu = (): JSX.Element => {
       </div>
       <CustomNav display={display}>
         <ul>
-          <li>
+          <li onClick={() => changeWebPage('javascript')}>
             <SiJavascript /> Java Script
           </li>
-          <li>
-            <SiCss3 /> Css
+          <li onClick={() => changeWebPage('css')}>
+            <SiCss3 /> CSS
           </li>
-          <li>
-            <SiHtml5 /> Html
+          <li onClick={() => changeWebPage('html')}>
+            <SiHtml5 /> HTML
           </li>
           <li>
             <SiReact /> React.js

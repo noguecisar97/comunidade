@@ -45,6 +45,8 @@ module.exports = {
 
         // This rule is not compatible with Next.js's <Link /> components
         'jsx-a11y/anchor-is-valid': 'off',
+        'jsx-a11y/no-noninteractive-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
 
         // Why would you want unused vars?
         '@typescript-eslint/no-unused-vars': ['error'],

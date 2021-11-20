@@ -6,7 +6,7 @@ import { WebPage } from 'modules/web'
 import { LinguagensPage } from 'modules/linguagens'
 
 // styles
-import { Container } from './styles'
+import { Container } from '../components/containerPages/styles'
 
 // Redux
 import { useSelector } from 'react-redux'

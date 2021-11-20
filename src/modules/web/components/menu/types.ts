@@ -1,3 +1,3 @@
 export interface IProps {
-  display: string
+  display?: string
 }
