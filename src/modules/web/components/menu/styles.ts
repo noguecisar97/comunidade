@@ -14,6 +14,7 @@ export const ContainerPrincipal = styled.div<IProps>`
 
     .btn {
       margin: 0;
+      margin-left: 1rem;
       padding: 0;
       background: transparent;
       outline: 0;

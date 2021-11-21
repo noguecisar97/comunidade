@@ -1,6 +1,5 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { setNewPage } from 'stores/ducks/Pagination/action'
+import { useRouter } from 'next/router'
 import { Card, Contend, Description, Img, Title } from './styles'
 import { IProps } from './types'
 
@@ -11,10 +10,10 @@ export const CardTopic: React.FC<IProps> = ({
   link,
   ...rest
 }): JSX.Element => {
-  const dispatch = useDispatch()
+  const router = useRouter()
 
   const changePage = (page: string): void => {
-    if (page !== '') dispatch(setNewPage({ page }))
+    if (page !== '') router.push(page)
   }
 
   return (
