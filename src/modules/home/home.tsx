@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Anchor, Banner, Image, Title, TopicsContainer, Container } from './styles'
+import { Banner, Image, Title, TopicsContainer, Container } from './styles'
 import { GiSupersonicArrow } from 'react-icons/gi'
 import { CardTopic } from 'components/cardTopic'
 import Topicos from './topicos.json'
@@ -9,12 +9,11 @@ export const Home = (): JSX.Element => {
   return (
     <Container>
       <Banner>
-        <Title>Unnameds</Title>
-        <Image src="/images/home.jpg" alt="imagem" />
-        <About>
+        <Title>
           <GiSupersonicArrow />
-          <Anchor href="#topics-home-page">Veja mais</Anchor>
-        </About>
+          Unnameds
+        </Title>
+        <Image src="/images/home.jpg" alt="imagem" />
       </Banner>
       <ViewContainer>
         <TopicsContainer id="topics-home-page">
