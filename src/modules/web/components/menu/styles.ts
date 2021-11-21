@@ -117,7 +117,7 @@ export const CustomButton = styled(ButtonCustom)`
 `
 
 export const CustomNav = styled.nav<IProps>`
-  display: ${(props) => (props.display ? props.display : '')};
+  display: ${(props) => (props.display ? props.display : 'none')};
 
   @media (min-width: 800px) {
     display: ${(props) => (props.display ? 'flex' : 'flex')};
