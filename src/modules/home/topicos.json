@@ -22,11 +22,6 @@
   {
     "name": "Desenvolvimento & Web",
     "description": "Construção de website é uma das demandas mais pedidas atualmente, conseguimos construir diversos sites, se já conter um template fica até mais fácil, focados em qualidade e seguraça",
-    "link": "web"
-  },
-  {
-    "name": "Principais Linguagens",
-    "description": "Atualmente existem diversas linguagens no mercado, temos um grupo grande atuando com diversas linguagens para atender as demandas, veja mais sobre nossas principais linguagens.",
-    "link": "linguagens"
+    "link": "/web"
   }
 ]

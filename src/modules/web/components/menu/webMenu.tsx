@@ -1,8 +1,7 @@
 import { Menu } from '@material-ui/icons'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { setNewPage } from 'stores/ducks/Pagination/action'
-import { ContainerPrincipal, CustomButton, CustomNav } from './styles'
+import { ContainerPrincipal, CustomNav } from './styles'
 import { SiCss3, SiHtml5, SiNextdotjs, SiPython, SiReact, SiTypescript } from 'react-icons/si'
 import { GrGraphQl } from 'react-icons/gr'
 import { SiJavascript } from 'react-icons/si'
@@ -12,10 +11,6 @@ import { setWebPage } from 'stores/ducks/webPages/action'
 export const WebMenu = (): JSX.Element => {
   const dispatch = useDispatch()
   const [display, setDisplay] = useState('')
-
-  const changePage = (page: string): void => {
-    dispatch(setNewPage({ page }))
-  }
 
   function abrirMenu(): void {
     setDisplay(display === 'flex' ? 'none' : 'flex')
@@ -28,15 +23,6 @@ export const WebMenu = (): JSX.Element => {
   return (
     <ContainerPrincipal display="flex">
       <div>
-        <CustomButton
-          onClick={() => {
-            changePage('home')
-          }}
-          hover
-        >
-          voltar
-        </CustomButton>
-
         <button className="btn" onClick={() => abrirMenu()}>
           <Menu />
         </button>
