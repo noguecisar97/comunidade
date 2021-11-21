@@ -5,24 +5,61 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   overflow-x: hidden;
 `
 
 export const Banner = styled.div`
   position: relative;
-  width: 100vw;
+  width: 100%;
+  max-width: 1366px;
 `
 
 const FrameFontSize = keyframes`
   0% {
-    font-size: 4.5rem;
+    left: 3rem;
+    opacity: 0;
+  }
+  10% {
+    left: 4rem;
+    opacity: 0.1;
+  }
+  20% {
+    left: 5rem;
+    opacity: 0.2;
+  }
+  30%{
+    left: 6rem;
+    opacity: 0.3;
+  }
+  40%{
+    left: 7rem;
+    opacity: 0.4;
   }
   50% {
-    font-size: 5.2rem;
+    left: 8rem;
+    opacity: 0.5;
+  }
+  60%{
+    left: 9rem;
+    opacity: 0.6;
+  }
+  70%{
+    left: 10rem;
+    opacity: 0.7;
+  }
+  80%{
+    left: 11rem;
+    opacity: 0.9;
+  }
+  90%{
+    left: 12rem;
+    opacity: 1;
   }
   100% {
-    font-size: 4.5rem;
+    left: 13rem;
+    opacity: 0;
   }
 `
 
@@ -33,27 +70,22 @@ export const Title = styled.h1`
   color: ${(props) => props.theme.colors.secondary};
   z-index: 100;
   text-transform: uppercase;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.2rem;
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
   font-style: italic;
 
-  text-shadow: ${(props) => props.theme.colors.fifth} 3px 3px 5px;
-
-  &:hover {
-    color: ${(props) => props.theme.colors.fifth};
-    text-shadow: ${(props) => props.theme.colors.secondary} 3px 3px 5px;
-  }
-
-  animation: ${FrameFontSize} 4s infinite;
+  animation: ${FrameFontSize} 1.5s infinite;
 `
 
 export const Image = styled.img`
   width: 100%;
   height: calc(100vh - 80px);
   min-height: 26rem;
+  max-height: 32rem;
   filter: grayscale(0.4) brightness(0.6);
+  border-radius: 0 0 4rem 4rem;
 
   @media screen and (max-width: 800px) {
     height: calc(100vh - 280px);
@@ -61,26 +93,6 @@ export const Image = styled.img`
 
   @media screen and (max-width: 600px) {
     height: calc(100vh - 380px);
-  }
-`
-
-export const About = styled.p`
-  color: ${(props) => props.theme.colors.secondary};
-  font-size: 3.4rem;
-  font-weight: bolder;
-  font-style: italic;
-
-  position: absolute;
-  bottom: 1.6rem;
-
-  cursor: pointer;
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-
-  &:hover {
-    font-size: 4.6rem;
   }
 `
 
@@ -93,13 +105,4 @@ export const TopicsContainer = styled.div`
   gap: 2rem 3rem;
 
   padding: 6rem 1rem;
-`
-
-export const Anchor = styled.a`
-  text-decoration: none;
-  color: ${(props) => props.theme.colors.secondary};
-
-  &:active {
-    color: ${(props) => props.theme.colors.secondary};
-  }
 `
