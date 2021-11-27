@@ -14,7 +14,12 @@ export default createGlobalStyle`
       font: 400 12px Roboto, sans-serif;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
+    body, html {
+      font: 400 11px Roboto, sans-serif;
+    }
+  }
+  @media screen and (max-width: 700px) {
     body, html {
       font: 400 10px Roboto, sans-serif;
     }
