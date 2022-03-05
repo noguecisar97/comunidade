@@ -22,7 +22,8 @@
     "outDir": "./build",
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "incremental": true
   },
   "include": [
     "package.json",
@@ -32,5 +33,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
+  ]
 }
