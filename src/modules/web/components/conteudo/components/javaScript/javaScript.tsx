@@ -25,6 +25,7 @@ export const JavaScript = (): JSX.Element => {
           key={`${e.titulo}-${i}`}
           titulo={e.titulo}
           texto={e.texto}
+          img={e.img}
           onClick={() => setConteudo(e.titulo)}
           saberMais="Click para saber mais ..."
         />

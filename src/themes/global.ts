@@ -8,6 +8,26 @@ export default createGlobalStyle`
   }
   body, html {
     font: 400 13px Roboto, sans-serif;
+    overflow-x: hidden ;
+    width: 101vw;
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${(props) => props.theme.colors.fifth};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${(props) => props.theme.colors.fourth};
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${(props) => props.theme.colors.primary};
+    }
+
+    scrollbar-color: ${(props) => props.theme.colors.fourth} ${(props) =>
+  props.theme.colors.fifth} ;
+    scrollbar-width: thin;
   }
   @media screen and (max-width: 1200px) {
     body, html {

@@ -60,8 +60,7 @@ export const ContainerPrincipal = styled.div<IProps>`
   }
 
   @media (min-width: 800px) {
-    padding: 25px 0 0 0;
-    border-right: solid 1px ${(props) => props.theme.colors.primary};
+    padding: 25px 0 0 20px;
     border-bottom: none;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,7 @@ export const ContainerPrincipal = styled.div<IProps>`
       li {
         color: ${(props) => props.theme.colors.primary};
         font-size: 1.5rem;
-        padding: 1.2rem;
+        padding: 0.6rem;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -99,10 +98,6 @@ export const ContainerPrincipal = styled.div<IProps>`
 
         :hover {
           color: ${(props) => props.theme.colors.secondary};
-        }
-
-        :first-child {
-          margin-top: 3rem;
         }
       }
     }
