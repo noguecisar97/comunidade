@@ -1,54 +1,37 @@
 [
   {
+    "img": "ifElse.png",
+    "titulo": "IF / ELSE",
+    "texto": "Estrutura condicional, trabalhando com verdadeiro ou falso para seguimento do script."
+  },
+  {
+    "img": "declarations.png",
     "titulo": "Variaveis",
     "texto": "Variaveis são palavras reservadas da linguaguem para guardar algo na memoria, elas mudam dependendo do scoup."
   },
   {
+    "img": "object.png",
     "titulo": "Objeto",
     "texto": "Object é um conjunto de chave e valor que representa algo."
   },
   {
+    "img": "array.png",
     "titulo": "Array",
     "texto": "Array no JavaScript é um objeto usado para construir listas."
   },
   {
+    "img": "function.png",
     "titulo": "Function",
     "texto": "Function é uma estrutura de contrução de função que precisa ser chamada pra ter sua execução."
   },
   {
-    "titulo": "If / Else",
-    "texto": "If / else é uma estrutura que trabalha com condiçoes de verdadeiro ou falso."
-  },
-  {
+    "img": "switch.png",
     "titulo": "Switch",
     "texto": "Switch é uma estrutura que trabalha com condiçoes de verdadeiro ou falso usando cases."
   },
   {
+    "img": "for.png",
     "titulo": "For",
     "texto": "For é um estrutura de percorrer array."
-  },
-  {
-    "titulo": "ForEach",
-    "texto": "#"
-  },
-  {
-    "titulo": "Map",
-    "texto": "#"
-  },
-  {
-    "titulo": "Filter",
-    "texto": "#"
-  },
-  {
-    "titulo": "Reduce",
-    "texto": "#"
-  },
-  {
-    "titulo": "Find",
-    "texto": "#"
-  },
-  {
-    "titulo": "Replace",
-    "texto": "#"
   }
 ]
