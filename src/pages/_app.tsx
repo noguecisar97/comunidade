@@ -60,11 +60,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           content="unnameds, javascript, html, css, react, api, documentação, lib de components, startup"
         />
         <meta httpEquiv="pragma" content="no-cache" />
-        <meta httpEquiv="refresh" content="300" />
         <meta name="robots" content="index,follow" />
         <meta httpEquiv="imagetoolbar" content="no" />
         <meta name="generator" content="Next.js" />
-        <meta name="revisit-after" content="30 days" />
         <meta name="rating" content="general" />
       </Head>
       <Provider store={store}>
