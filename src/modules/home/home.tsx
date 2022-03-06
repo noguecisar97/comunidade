@@ -23,6 +23,7 @@ export const Home = (): JSX.Element => {
               description={e.description}
               title={e.name}
               link={e.link}
+              img={e.img}
             />
           ))}
         </TopicsContainer>

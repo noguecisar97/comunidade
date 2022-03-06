@@ -51,9 +51,14 @@ export const Button = styled.button`
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.a`
+  text-decoration: none;
   font-size: 3rem;
   color: ${(props) => props.theme.colors.secondary};
   font-style: italic;
   letter-spacing: 0.2rem;
+
+  :hover {
+    cursor: pointer;
+  }
 `

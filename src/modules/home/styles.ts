@@ -81,11 +81,10 @@ export const Title = styled.h1`
 
 export const Image = styled.img`
   width: 100%;
-  height: calc(100vh - 80px);
-  min-height: 26rem;
-  max-height: 32rem;
+  height: calc(100vh - 120px);
+  min-height: 20rem;
+  max-height: 24rem;
   filter: grayscale(0.4) brightness(0.6);
-  border-radius: 0 0 4rem 4rem;
 
   @media screen and (max-width: 800px) {
     height: calc(100vh - 280px);
@@ -94,6 +93,8 @@ export const Image = styled.img`
   @media screen and (max-width: 600px) {
     height: calc(100vh - 380px);
   }
+
+  opacity: 0.2;
 `
 
 export const TopicsContainer = styled.div`

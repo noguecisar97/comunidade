@@ -14,7 +14,7 @@ export const Header = (): JSX.Element => {
   return (
     <Container>
       <Contend>
-        <Title>Unnameds</Title>
+        <Title href="/">Unnameds</Title>
         <Menu>
           <OptionMenu>Documentação</OptionMenu>
           <OptionMenu>Duvidas e Bugs</OptionMenu>
