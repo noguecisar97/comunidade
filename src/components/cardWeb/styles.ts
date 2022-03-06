@@ -22,6 +22,7 @@ export const CardWebContainer = styled.div`
     line-height: 2rem;
     letter-spacing: 0.2rem;
     font-size: 2.2rem;
+    transition: color 1.2s;
   }
 
   p {
@@ -29,6 +30,7 @@ export const CardWebContainer = styled.div`
     margin: 0 1rem;
     text-align: center;
     font-size: 1.1rem;
+    transition: filter 1.2s;
   }
 
   p:last-child {
@@ -39,18 +41,25 @@ export const CardWebContainer = styled.div`
   img {
     width: 20rem;
     height: 10rem;
+    transition: filter 1.2s;
   }
+
+  transition: transform 1.2s;
 
   :hover {
     transform: scale(1.02);
 
     h1 {
-      color: ${(props) => props.theme.colors.fourth};
+      color: ${(props) => props.theme.colors.secondary};
+      filter: brightness(1);
     }
 
-    img,
+    img {
+      filter: grayscale(70);
+    }
+
     p {
-      filter: brightness(0.5);
+      filter: brightness(1);
     }
   }
 `
