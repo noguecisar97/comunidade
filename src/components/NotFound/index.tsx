@@ -7,7 +7,7 @@ const NotFound = (): JSX.Element => {
   useEffect(() => {
     setTimeout(() => {
       router.push('/')
-    }, 3000)
+    }, 5000)
   }, [])
 
   return (
@@ -17,7 +17,7 @@ const NotFound = (): JSX.Element => {
 
       <h2>Página não encontrada! :/</h2>
       <p> Desculpe, a página que voce procura não existe no nosso site... </p>
-      <p> Você será redirecionado para a Homepage </p>
+      <p> Você será redirecionado para a Homepage em 5 segundos</p>
     </Container404>
   )
 }
