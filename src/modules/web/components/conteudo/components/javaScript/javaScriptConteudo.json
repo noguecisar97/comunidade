@@ -2,7 +2,8 @@
   {
     "img": "ifElse.png",
     "titulo": "IF / ELSE",
-    "texto": "Estrutura condicional, trabalhando com verdadeiro ou falso para seguimento do script."
+    "texto": "Estrutura condicional, trabalhando com verdadeiro ou falso para seguimento do script.",
+    "path": "/web/javascript/ifelse"
   },
   {
     "img": "declarations.png",

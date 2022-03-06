@@ -1,9 +1,12 @@
 import React from 'react'
+import { PageIfElse } from 'modules/web/components/javascript/ifelse'
 
-export const PageIfElse = (): JSX.Element => {
+const PageJSIf = (): JSX.Element => {
   return (
     <div>
-      <h1>if else</h1>
+      <PageIfElse />
     </div>
   )
 }
+
+export default PageJSIf
