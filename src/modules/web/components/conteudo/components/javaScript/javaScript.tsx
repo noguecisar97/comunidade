@@ -1,23 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CardWeb } from 'components/cardWeb'
 import JavaScriptConteudo from './javaScriptConteudo.json'
 
 export const JavaScript = (): JSX.Element => {
-  const [conteudo, setConteudo] = useState<string>('')
-
-  const topicos: { [key: string]: JSX.Element } = {
-    Variaveis: <>ABCDEF</>,
-  }
-
-  if (conteudo !== '') {
-    return (
-      <>
-        <button onClick={() => setConteudo('')}>voltar</button>
-        {topicos[conteudo]}
-      </>
-    )
-  }
-
   return (
     <>
       {JavaScriptConteudo.map((e, i) => (
@@ -26,7 +11,7 @@ export const JavaScript = (): JSX.Element => {
           titulo={e.titulo}
           texto={e.texto}
           img={e.img}
-          onClick={() => setConteudo(e.titulo)}
+          onClick={() => null}
           saberMais="Click para saber mais ..."
         />
       ))}
