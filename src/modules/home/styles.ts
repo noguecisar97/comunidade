@@ -56,12 +56,14 @@ export const Image = styled.img`
 `
 
 export const TopicsContainer = styled.div`
-  max-width: 1365px;
+  width: 100%;
 
+  max-width: 1365px;
   flex-wrap: wrap;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 2rem 3rem;
+  gap: 1rem 2rem;
 
   padding: 6rem 1rem;
 `

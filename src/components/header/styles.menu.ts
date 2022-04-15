@@ -11,7 +11,7 @@ export const Menu = styled.div`
   }
 `
 
-export const MenuMobile = styled.div`
+export const MenuMobile = styled.div<{ open: boolean }>`
   display: none;
   position: relative;
 
@@ -21,8 +21,8 @@ export const MenuMobile = styled.div`
     width: 25px;
     height: 25px;
 
-    color: ${(props) => props.theme.colors.secondary};
-    fill: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => (props.open ? props.theme.colors.fourth : props.theme.colors.secondary)};
+    fill: ${(props) => (props.open ? props.theme.colors.fourth : props.theme.colors.secondary)};
   }
 
   @media screen and (max-width: 650px) {
@@ -30,17 +30,19 @@ export const MenuMobile = styled.div`
   }
 `
 
-export const SubMenu = styled.div`
+export const SubMenu = styled.div<{ open: boolean }>`
   position: fixed;
-  width: 60vw;
+  width: ${(props) => (props.open ? '60vw' : '0vw')};
   overflow: hidden;
 
   padding-top: 80px;
 
   height: 100vh;
 
-  right: 0px;
+  right: ${(props) => (props.open ? '0px' : '-60vw')};
   top: 0px;
+
+  transition: right 10s;
 
   background-color: ${(props) => props.theme.colors.third};
   border-left: solid 1px ${(props) => props.theme.colors.secondary};

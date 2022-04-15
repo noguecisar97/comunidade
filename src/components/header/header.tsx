@@ -36,10 +36,10 @@ export const Header = (): JSX.Element => {
             Entrar
           </ST.Button>
         </STMenu.Menu>
-        <STMenu.MenuMobile>
+        <STMenu.MenuMobile open={menuMobile}>
           <CgMenuGridR onClick={() => setMenuMobile(!menuMobile)} />
           {menuMobile && (
-            <STMenu.SubMenu>
+            <STMenu.SubMenu open={menuMobile}>
               <STMenu.OptionMobile>Home</STMenu.OptionMobile>
               <STMenu.ButtonMobile>
                 <Image width={20} height={20} src="/svgs/user_ninja.svg" alt="" />
