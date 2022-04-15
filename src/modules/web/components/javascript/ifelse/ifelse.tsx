@@ -1,19 +1,35 @@
 import React from 'react'
 import Router from 'next/router'
-import { Container, Contend } from './styles'
+import { Button, Code, Container, Contend, Text, Title } from './styles'
+import { BsArrowLeft } from 'react-icons/bs'
 
 export const PageIfElse = (): JSX.Element => {
   return (
     <Container>
       <Contend>
-        <button
+        <Button
           onClick={() => {
             Router.push('/web')
           }}
         >
+          <BsArrowLeft />
           Voltar
-        </button>
-        <h1>IF ELSE</h1>
+        </Button>
+        <div>
+          <Title>IF ELSE</Title>
+
+          <Text>
+            Para utilização segue a seguinte sintaxe na qual a partir da condição é designado o
+            caminho segue dentro de um script
+          </Text>
+          <Code>
+            <p>{`if (condição) {`}</p>
+            <p>{`///***se condicao correto***///`}</p>
+            <p>{`} else {`}</p>
+            <p>{`///***se condicao falsa***///`}</p>
+            <p>{`}`}</p>
+          </Code>
+        </div>
       </Contend>
     </Container>
   )

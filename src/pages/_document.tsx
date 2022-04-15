@@ -24,12 +24,12 @@ export default class MyDocument extends Document {
       const initialProps = await Document.getInitialProps(ctx)
       return {
         ...initialProps,
-        styles: (
-          <>
+        styles: [
+          <div key="style_initial">
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </>
-        ),
+          </div>,
+        ],
       }
     } finally {
       sheet.seal()
@@ -47,7 +47,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link rel="icon" href="code.ico" />
+          <link rel="icon" href="images/logo.png" />
         </Head>
         <body>
           <Main />

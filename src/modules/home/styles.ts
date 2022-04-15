@@ -13,7 +13,24 @@ export const Container = styled.div`
 export const Banner = styled.div`
   position: relative;
   width: 100%;
-  max-width: 1366px;
+  height: 100vh;
+
+  background-image: url('images/wallpaper.jpg');
+  background-size: 100vw 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: blur(1.5px) grayscale(1) brightness(0.8);
+
+  @media screen and (max-width: 1200px) {
+    background-size: 135% 100%;
+  }
+  @media screen and (max-width: 900px) {
+    background-size: 155% 100%;
+  }
+  @media screen and (max-width: 700px) {
+    background-size: 200% 100%;
+  }
 `
 
 const FrameFontSize = keyframes`

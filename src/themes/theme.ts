@@ -3,10 +3,10 @@ import { themeProps } from './types'
 export const theme: themeProps = {
   name: 'comunidade',
   colors: {
-    primary: '#1B6E74',
-    secondary: '#ffffff',
-    third: '#17161F',
-    fourth: '#08474B',
-    fifth: '#079B9B',
+    primary: '#283294',
+    secondary: '#4b5ea3',
+    third: '#1e1e3a',
+    fourth: '#fefeff',
+    fifth: '#4d4e7a',
   },
 }

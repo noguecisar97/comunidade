@@ -6,6 +6,17 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
+  html {
+    width: 100vw;
+    min-height: 100vh;
+
+    background-image: url('images/wallpaper.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   body, html {
     font: 400 13px Roboto, sans-serif;
     overflow-x: hidden ;
@@ -33,15 +44,24 @@ export default createGlobalStyle`
     body, html {
       font: 400 12px Roboto, sans-serif;
     }
+    html {
+      background-size: 135% 100%;
+    }
   }
   @media screen and (max-width: 900px) {
     body, html {
       font: 400 11px Roboto, sans-serif;
     }
+    html {
+      background-size: 155% 100%;
+    }
   }
   @media screen and (max-width: 700px) {
     body, html {
       font: 400 10px Roboto, sans-serif;
+    }
+    html {
+      background-size: 200% 100%;
     }
   }
 `

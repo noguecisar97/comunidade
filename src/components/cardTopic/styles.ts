@@ -13,7 +13,14 @@ export const Card = styled.div`
   border: solid 1px ${(props) => props.theme.colors.fourth};
   transition: border 2s;
 
+  @keyframes pulsate {
+    0% {
+      box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+  }
+
   :hover {
+    animation: pulsate 4s;
     cursor: pointer;
     border-color: ${(props) => props.theme.colors.secondary};
 
