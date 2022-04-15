@@ -16,20 +16,24 @@ export const Banner = styled.div`
   height: 100vh;
 
   background-image: url('images/wallpaper.jpg');
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: 140% 125%;
+  /* background-position: center; */
+  background-position: 15% 5%;
   background-repeat: no-repeat;
 
   filter: grayscale(1) brightness(0.8);
 
   @media screen and (max-width: 1200px) {
-    background-size: 155% 100%;
+    background-size: 175% 120%;
+    background-position: 25% 5%;
   }
   @media screen and (max-width: 900px) {
-    background-size: 200% 100%;
+    background-size: 200% 115%;
+    background-position: 35% 5%;
   }
   @media screen and (max-width: 700px) {
     background-size: 250% 100%;
+    background-position: center;
   }
 `
 

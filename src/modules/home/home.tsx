@@ -5,7 +5,7 @@ import { CardTopic } from 'components/cardTopic'
 import Topicos from './topicos.json'
 import { ViewContainer } from 'components/view'
 
-export const Home = (): JSX.Element => {
+const Home = (): JSX.Element => {
   return (
     <Container>
       <Banner />
@@ -25,3 +25,5 @@ export const Home = (): JSX.Element => {
     </Container>
   )
 }
+
+export default Home
