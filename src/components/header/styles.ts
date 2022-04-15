@@ -72,15 +72,17 @@ export const Title = styled.a`
   }
 `
 
-export const Image = styled.img`
-  width: 190px;
-  height: 185px;
+export const Image = styled.img<{ fixed: boolean }>`
+  width: ${(props) => (props.fixed ? '70px' : '190px')};
+  height: ${(props) => (props.fixed ? '70px' : '185px')};
   position: absolute;
-  top: 13px;
+  top: ${(props) => (props.fixed ? '6px' : '13px')};
   left: 5px;
 
-  transition: transform 20s ease;
-  transition: top 5s ease;
+  transition: transform 10s ease;
+  transition: width 10s ease;
+  transition: height 10s ease;
+  transition: top 3s ease;
 
   &:hover {
     cursor: pointer;

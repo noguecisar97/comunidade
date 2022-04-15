@@ -23,12 +23,12 @@ export const Header = (): JSX.Element => {
         }
       }
     }
-  })
+  }, [fixed])
 
   return (
     <ST.Container fixed={fixed}>
       <ST.Contend>
-        <ST.Image src="images/logoGrande.png" alt="" />
+        <ST.Image fixed={fixed} src="images/logoGrande.png" alt="" />
         <STMenu.Menu>
           <ST.OptionMenu> Home </ST.OptionMenu>
           <ST.Button>
