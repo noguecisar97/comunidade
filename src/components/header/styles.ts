@@ -5,7 +5,7 @@ export const Container = styled.div<{ fixed: boolean }>`
   background-color: ${(props) => (props.fixed ? props.theme.colors.third : 'transparent')};
   display: flex;
   justify-content: center;
-  height: 85px;
+  height: ${(props) => (props.fixed ? '60px' : '85px')};
   padding: 0 3%;
   position: fixed;
   top: 0;
@@ -76,7 +76,7 @@ export const Image = styled.img<{ fixed: boolean }>`
   width: ${(props) => (props.fixed ? '70px' : '190px')};
   height: ${(props) => (props.fixed ? '70px' : '185px')};
   position: absolute;
-  top: ${(props) => (props.fixed ? '6px' : '13px')};
+  top: ${(props) => (props.fixed ? '15px' : '13px')};
   left: 5px;
 
   transition: transform 10s ease;
