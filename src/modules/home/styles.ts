@@ -16,7 +16,7 @@ export const Banner = styled.div`
   height: 100vh;
 
   background-image: url('images/wallpaper.jpg');
-  background-size: 130% 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 
