@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 //styles
-import { Button, Container, Contend, OptionMenu, Title } from './styles'
-import { Menu, MenuMobile, SubMenu, OptionMobile, ButtonMobile } from './styles.menu'
+import * as ST from './styles'
+import * as STMenu from './styles.menu'
 
 //icons
 import { CgMenuGridR } from 'react-icons/cg'
@@ -11,34 +11,44 @@ import { CgMenuGridR } from 'react-icons/cg'
 export const Header = (): JSX.Element => {
   const [menuMobile, setMenuMobile] = useState<boolean>(false)
 
+  const [fixed, setFixed] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (window) {
+      window.onscroll = function () {
+        if (window.scrollY >= 100 && !fixed) {
+          setFixed(true)
+        } else if (window.scrollY < 100 && fixed) {
+          setFixed(false)
+        }
+      }
+    }
+  }, [fixed])
+
   return (
-    <Container>
-      <Contend>
-        <Title>Unnameds</Title>
-        <Menu>
-          <OptionMenu>Documentação</OptionMenu>
-          <OptionMenu>Duvidas e Bugs</OptionMenu>
-          <OptionMenu>Equipe</OptionMenu>
-          <Button>
-            <Image width={20} height={20} src="/svgs/user_ninja.svg" alt="" />
+    <ST.Container fixed={fixed}>
+      <ST.Contend>
+        <ST.Image fixed={fixed} src="images/logoGrande.png" alt="" />
+        <STMenu.Menu>
+          <ST.OptionMenu> Home </ST.OptionMenu>
+          <ST.Button>
+            <Image width={16} height={16} src="/svgs/user_ninja.svg" alt="" />
             Entrar
-          </Button>
-        </Menu>
-        <MenuMobile>
+          </ST.Button>
+        </STMenu.Menu>
+        <STMenu.MenuMobile open={menuMobile}>
           <CgMenuGridR onClick={() => setMenuMobile(!menuMobile)} />
           {menuMobile && (
-            <SubMenu>
-              <OptionMobile>Documentação</OptionMobile>
-              <OptionMobile>Duvidas e Bugs</OptionMobile>
-              <OptionMobile>Equipe</OptionMobile>
-              <ButtonMobile>
+            <STMenu.SubMenu open={menuMobile}>
+              <STMenu.OptionMobile>Home</STMenu.OptionMobile>
+              <STMenu.ButtonMobile>
                 <Image width={20} height={20} src="/svgs/user_ninja.svg" alt="" />
                 Entrar
-              </ButtonMobile>
-            </SubMenu>
+              </STMenu.ButtonMobile>
+            </STMenu.SubMenu>
           )}
-        </MenuMobile>
-      </Contend>
-    </Container>
+        </STMenu.MenuMobile>
+      </ST.Contend>
+    </ST.Container>
   )
 }

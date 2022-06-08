@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  web:
+    image: node:14
+    build: .
+    volumes:
+      - meu-novo-volume:/app
+      - c:/container/cesar
+    container_name: website
+    networks:
+      - my_network
+    ports:
+      - 3000:4003
+
+volumes:
+  meu-novo-volume: {}
+
+networks:
+  my_network:
+    driver: bridge

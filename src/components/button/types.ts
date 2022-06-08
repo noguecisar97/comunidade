@@ -1,4 +1,4 @@
-import { ReactSVGElement, MouseEventHandler, CSSProperties } from 'react'
+import { ReactSVGElement, MouseEventHandler, CSSProperties, ReactNode } from 'react'
 
 export interface IProps {
   text?: string
@@ -9,6 +9,7 @@ export interface IProps {
   style?: CSSProperties
   hover?: boolean
   variant?: string
+  children?: ReactNode
 }
 
 export interface IButtonProps {

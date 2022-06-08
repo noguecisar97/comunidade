@@ -11,16 +11,18 @@ export const Menu = styled.div`
   }
 `
 
-export const MenuMobile = styled.div`
+export const MenuMobile = styled.div<{ open: boolean }>`
   display: none;
   position: relative;
 
   svg {
+    z-index: 100;
+
     width: 25px;
     height: 25px;
 
-    color: ${(props) => props.theme.colors.secondary};
-    fill: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => (props.open ? props.theme.colors.fourth : props.theme.colors.secondary)};
+    fill: ${(props) => (props.open ? props.theme.colors.fourth : props.theme.colors.secondary)};
   }
 
   @media screen and (max-width: 650px) {
@@ -28,30 +30,30 @@ export const MenuMobile = styled.div`
   }
 `
 
-export const SubMenu = styled.div`
-  position: absolute;
-  width: 50vw;
-  padding: 1rem;
-  border-radius: 1rem;
+export const SubMenu = styled.div<{ open: boolean }>`
+  position: fixed;
+  width: ${(props) => (props.open ? '60vw' : '0vw')};
+  overflow: hidden;
 
-  right: 0;
-  top: 3rem;
+  padding-top: 80px;
 
-  background-color: ${(props) => props.theme.colors.primary};
-  border: solid 1px ${(props) => props.theme.colors.secondary};
+  height: 100vh;
+
+  right: ${(props) => (props.open ? '0px' : '-60vw')};
+  top: 0px;
+
+  transition: right 10s;
+
+  background-color: ${(props) => props.theme.colors.third};
+  border-left: solid 1px ${(props) => props.theme.colors.secondary};
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-
-  p:nth-child(3) {
-    border-bottom: solid 1px ${(props) => props.theme.colors.secondary};
-  }
 `
 
 export const OptionMobile = styled.p`
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.fourth};
   font-size: 1.6rem;
   font-style: italic;
   width: 100%;
@@ -61,15 +63,17 @@ export const OptionMobile = styled.p`
   align-items: center;
   justify-content: center;
 
+  transition: transform 1.2s;
   &:hover {
+    background-color: ${(props) => props.theme.colors.secondary};
     cursor: pointer;
-    background-color: ${(props) => props.theme.colors.fifth};
+    transform: scale(1.2);
   }
 `
 export const ButtonMobile = styled.button`
   width: 12rem;
   height: 4rem;
-  color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.fourth};
   background-color: ${(props) => props.theme.colors.fifth};
   border: solid 1px ${(props) => props.theme.colors.secondary};
   border-radius: 50px;
@@ -81,8 +85,10 @@ export const ButtonMobile = styled.button`
 
   margin: 1rem;
 
+  transition: transform 1.2s;
   &:hover {
-    background-color: ${(props) => props.theme.colors.third};
+    background-color: ${(props) => props.theme.colors.fifth};
     cursor: pointer;
+    transform: scale(1.2);
   }
 `
