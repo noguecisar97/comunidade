@@ -17,10 +17,10 @@ export const CardTopic: React.FC<IProps> = ({
   }
 
   return (
-    <Card {...rest}>
-      <Img src={img ?? '/images/home.jpg'} alt={`image of ${title}`} title={`image of ${title}`} />
+    <Card onClick={() => changePage(link)} {...rest}>
+      <Img src={`images/${img}`} alt={`image of ${title}`} title={`image of ${title}`} />
       <Contend>
-        <Title onClick={() => changePage(link)}>{title}</Title>
+        <Title>{title}</Title>
         <Description>{description}</Description>
       </Contend>
     </Card>

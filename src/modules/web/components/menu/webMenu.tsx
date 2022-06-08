@@ -5,8 +5,10 @@ import { ContainerPrincipal, CustomNav } from './styles'
 import { SiCss3, SiHtml5, SiNextdotjs, SiPython, SiReact, SiTypescript } from 'react-icons/si'
 import { GrGraphQl } from 'react-icons/gr'
 import { SiJavascript } from 'react-icons/si'
-import { BsGearWideConnected } from 'react-icons/bs'
+import { BsGearWideConnected, BsArrowLeft } from 'react-icons/bs'
 import { setWebPage } from 'stores/ducks/webPages/action'
+
+import Router from 'next/router'
 
 export const WebMenu = (): JSX.Element => {
   const dispatch = useDispatch()
@@ -29,6 +31,9 @@ export const WebMenu = (): JSX.Element => {
       </div>
       <CustomNav display={display}>
         <ul>
+          <li onClick={() => Router.push('/')}>
+            <BsArrowLeft /> Voltar
+          </li>
           <li onClick={() => changeWebPage('javascript')}>
             <SiJavascript /> Java Script
           </li>

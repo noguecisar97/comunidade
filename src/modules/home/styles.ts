@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
@@ -13,79 +13,36 @@ export const Container = styled.div`
 export const Banner = styled.div`
   position: relative;
   width: 100%;
-  max-width: 1366px;
-`
+  height: 100vh;
 
-const FrameFontSize = keyframes`
-  0% {
-    left: 3rem;
-    opacity: 0;
-  }
-  10% {
-    left: 4rem;
-    opacity: 0.1;
-  }
-  20% {
-    left: 5rem;
-    opacity: 0.2;
-  }
-  30%{
-    left: 6rem;
-    opacity: 0.3;
-  }
-  40%{
-    left: 7rem;
-    opacity: 0.4;
-  }
-  50% {
-    left: 8rem;
-    opacity: 0.5;
-  }
-  60%{
-    left: 9rem;
-    opacity: 0.6;
-  }
-  70%{
-    left: 10rem;
-    opacity: 0.7;
-  }
-  80%{
-    left: 11rem;
-    opacity: 0.9;
-  }
-  90%{
-    left: 12rem;
-    opacity: 1;
-  }
-  100% {
-    left: 13rem;
-    opacity: 0;
-  }
-`
+  background-image: url('images/wallpaper.jpg');
+  background-size: 140% 125%;
+  /* background-position: center; */
+  background-position: 15% 5%;
+  background-repeat: no-repeat;
 
-export const Title = styled.h1`
-  position: absolute;
-  top: 4rem;
-  left: 3rem;
-  color: ${(props) => props.theme.colors.secondary};
-  z-index: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  filter: grayscale(1) brightness(0.8);
 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
-    Verdana, sans-serif;
-  font-style: italic;
-
-  animation: ${FrameFontSize} 1.5s infinite;
+  @media screen and (max-width: 1200px) {
+    background-size: 175% 120%;
+    background-position: 25% 5%;
+  }
+  @media screen and (max-width: 900px) {
+    background-size: 200% 115%;
+    background-position: 35% 5%;
+  }
+  @media screen and (max-width: 700px) {
+    background-size: 250% 100%;
+    background-position: center;
+  }
 `
 
 export const Image = styled.img`
   width: 100%;
-  height: calc(100vh - 80px);
-  min-height: 26rem;
-  max-height: 32rem;
+  height: calc(100vh - 120px);
+  min-height: 20rem;
+  max-height: 24rem;
   filter: grayscale(0.4) brightness(0.6);
-  border-radius: 0 0 4rem 4rem;
 
   @media screen and (max-width: 800px) {
     height: calc(100vh - 280px);
@@ -94,15 +51,19 @@ export const Image = styled.img`
   @media screen and (max-width: 600px) {
     height: calc(100vh - 380px);
   }
+
+  opacity: 0.2;
 `
 
 export const TopicsContainer = styled.div`
-  max-width: 1365px;
+  width: 100%;
 
+  max-width: 1365px;
   flex-wrap: wrap;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 2rem 3rem;
+  gap: 1rem 2rem;
 
   padding: 6rem 1rem;
 `
